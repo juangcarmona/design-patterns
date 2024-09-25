@@ -24,3 +24,11 @@ classDiagram
     Handler <|-- ConcreteHandler1
     Handler <|-- ConcreteHandler2
     Handler --> Handler : nextHandler
+```
+
+## Example
+
+In this directory, you can find examples of how to implement the pattern in **C#** and **Python**, as well as a **Mermaid** diagram illustrating the basic structure of the pattern.
+
+- **C#**: Example with classes implementing the Chain of Responsibility for a request approval system.
+- **Python**: A similar example that shows how objects are chained to process requests in an event handling system.
