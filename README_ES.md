@@ -3,7 +3,10 @@
 
 Esta serie de videos cortos está dedicada a la explicación de **patrones de diseño de software** utilizando ejemplos prácticos tanto en **Python** como en **C#**. Cada video cubrirá un patrón específico, acompañado de diagramas creados con **Mermaid** para ilustrar visualmente su estructura y funcionamiento. La idea es ofrecer una comprensión rápida y clara de los conceptos clave, facilitando su aplicación en proyectos reales.
 
-**ENGLISH VERSION:** For the ENGLISH version of this file, **click [here](README_ES.md)**. 
+**ENGLISH VERSION:** 
+
+For the ENGLISH version of this file, **click [here](README_ES.md)**. 
+
 Para la versión en inglés de este archivo, haz **clic [aquí](README.md)**.
 
 ## Estructura del Proyecto
