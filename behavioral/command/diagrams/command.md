@@ -1,4 +1,4 @@
-
+```mermaid
 classDiagram
     class Command {
         +execute()
@@ -20,3 +20,4 @@ classDiagram
     Command <|-- ConcreteCommand
     ConcreteCommand --> Receiver : receiver
     Invoker --> Command : command
+```

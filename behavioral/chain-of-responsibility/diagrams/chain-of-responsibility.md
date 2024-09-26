@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class Handler {
         +Handler nextHandler
@@ -14,4 +15,5 @@ classDiagram
 
     Handler <|-- ConcreteHandler1
     Handler <|-- ConcreteHandler2
-    Handler o--> Handler : next
+    Handler --> Handler : next
+```

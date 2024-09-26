@@ -1,4 +1,4 @@
-
+```mermaid
 classDiagram
     class AbstractExpression {
         +interpret(Context context)
@@ -18,4 +18,5 @@ classDiagram
 
     AbstractExpression <|-- TerminalExpression
     AbstractExpression <|-- NonTerminalExpression
-    NonTerminalExpression o--> AbstractExpression : expressions
+    NonTerminalExpression --> AbstractExpression : expressions
+```
