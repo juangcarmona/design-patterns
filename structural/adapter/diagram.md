@@ -1,1 +1,18 @@
-%% TODO: Añadir diagrama de Mermaid para el patrón adapter
+
+```mermaid
+classDiagram
+    class Target {
+        +request()
+    }
+
+    class Adapter {
+        +request()
+    }
+
+    class Adaptee {
+        +specificRequest()
+    }
+
+    Target <|-- Adapter
+    Adapter o-- Adaptee
+```
