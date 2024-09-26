@@ -1,1 +1,8 @@
-%% TODO: Añadir diagrama de Mermaid para el patrón singleton
+
+```mermaid
+classDiagram
+    class Singleton {
+        +getInstance()
+    }
+    Singleton o-- Singleton : unique instance
+```
