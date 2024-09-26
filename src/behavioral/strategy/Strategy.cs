@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Behavioral.Strategy;
 
 // Strategy interface
 public interface IStrategy

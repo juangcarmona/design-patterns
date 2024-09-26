@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Creational.AbstractFactory;
 
 // Abstract Factory interface
 public interface IAbstractFactory

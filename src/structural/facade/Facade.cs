@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Structural.Facade;
 
 // Subsystem A
 public class SubsystemA

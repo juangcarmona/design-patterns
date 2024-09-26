@@ -1,13 +1,33 @@
-using Xunit;
+using DesignPatterns.Behavioral.Interpreter;
 
-public class InterpreterTestsTests
+
+namespace DesignPatterns.Tests.Behavioral;
+
+public class InterpreterTests
 {
     [Fact]
-    public void Test_InterpreterTests()
+    public void TerminalExpression_ShouldInterpretCorrectly()
     {
         // Arrange
-        // Act
-        // Assert
+        var context = new Context { Data = "Hello world" };
+        var terminalExpression = new TerminalExpression("Hello");
+
+        // Act & Assert
+        terminalExpression.Interpret(context);
+    }
+
+    [Fact]
+    public void NonTerminalExpression_ShouldInterpretAllExpressions()
+    {
+        // Arrange
+        var context = new Context { Data = "Hello world" };
+        var terminalExpression1 = new TerminalExpression("Hello");
+        var terminalExpression2 = new TerminalExpression("world");
+        var nonTerminalExpression = new NonTerminalExpression();
+        nonTerminalExpression.AddExpression(terminalExpression1);
+        nonTerminalExpression.AddExpression(terminalExpression2);
+
+        // Act & Assert
+        nonTerminalExpression.Interpret(context);
     }
 }
-

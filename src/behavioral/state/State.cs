@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Behavioral.State;
 
 // State interface
 public abstract class State

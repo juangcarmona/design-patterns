@@ -1,13 +1,18 @@
-using Xunit;
+using DesignPatterns.Behavioral.Mediator;
 
-public class MediatorTestsTests
+namespace DesignPatterns.Tests.Behavioral;
+public class MediatorTests
 {
     [Fact]
-    public void Test_MediatorTests()
+    public void Mediator_ShouldCoordinateBetweenComponents()
     {
         // Arrange
-        // Act
-        // Assert
+        var component1 = new Component1();
+        var component2 = new Component2();
+        var mediator = new ConcreteMediator(component1, component2);
+
+        // Act & Assert
+        component1.DoAction1();  // Should trigger Component2
+        component2.DoAction2();  // Should trigger Component1
     }
 }
-

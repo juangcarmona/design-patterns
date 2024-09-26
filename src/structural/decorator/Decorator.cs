@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Structural.Decorator;
 
 // Component interface
 public abstract class Component

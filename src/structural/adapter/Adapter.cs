@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Structural.Adapter;
 
 // Target class
 public class Target

@@ -1,20 +1,115 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+<!-- BEHAVIORAL -->
+	<ItemGroup>
+		<Compile Include="..\src\behavioral\chain-of-responsibility\ChainOfResponsibility.cs">
+			<Link>Patterns\Behavioral\ChainOfResponsibility.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\command\Command.cs">
+			<Link>Patterns\Behavioral\Command.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\interpreter\Interpreter.cs">
+			<Link>Patterns\Behavioral\Interpreter.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\iterator\Iterator.cs">
+			<Link>Patterns\Behavioral\Iterator.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\mediator\Mediator.cs">
+			<Link>Patterns\Behavioral\Mediator.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\memento\Memento.cs">
+			<Link>Patterns\Behavioral\Memento.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\observer\Observer.cs">
+			<Link>Patterns\Behavioral\Observer.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\state\State.cs">
+			<Link>Patterns\Behavioral\State.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\strategy\Strategy.cs">
+			<Link>Patterns\Behavioral\Strategy.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\template-method\TemplateMethod.cs">
+			<Link>Patterns\Behavioral\TemplateMethod.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\behavioral\visitor\Visitor.cs">
+			<Link>Patterns\Behavioral\Visitor.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+	</ItemGroup>
+
+	<!-- CREATIONAL -->
+	<ItemGroup>
+		<Compile Include="..\src\creational\abstract-factory\AbstractFactory.cs">
+			<Link>Patterns\Creational\AbstractFactory.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\creational\builder\Builder.cs">
+			<Link>Patterns\Creational\Builder.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\creational\factory-method\FactoryMethod.cs">
+			<Link>Patterns\Creational\FactoryMethod.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\creational\prototype\Prototype.cs">
+			<Link>Patterns\Creational\Prototype.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\creational\singleton\Singleton.cs">
+			<Link>Patterns\Creational\Singleton.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+	</ItemGroup>
 
 
-<ItemGroup>
-  <None Update="..\src\**\*.*">
-    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-  </None>
-</ItemGroup>
+	<!-- STRUCTURAL -->
+	<ItemGroup>
+		<Compile Include="..\src\structural\adapter\Adapter.cs">
+			<Link>Patterns\Structural\Adapter.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\structural\bridge\Bridge.cs">
+			<Link>Patterns\Structural\Bridge.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\structural\composite\Composite.cs">
+			<Link>Patterns\Structural\Composite.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\structural\decorator\Decorator.cs">
+			<Link>Patterns\Structural\Decorator.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\structural\facade\Facade.cs">
+			<Link>Patterns\Structural\Facade.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\structural\flyweight\Flyweight.cs">
+			<Link>Patterns\Structural\Flyweight.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+		<Compile Include="..\src\structural\proxy\Proxy.cs">
+			<Link>Patterns\Structural\Proxy.cs</Link>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Compile>
+	</ItemGroup>
 
 
-<ItemGroup>
-  <ProjectReference Include="..\DesignPatterns.Tests\DesignPatterns.Tests.csproj" />
-</ItemGroup>
 </Project>

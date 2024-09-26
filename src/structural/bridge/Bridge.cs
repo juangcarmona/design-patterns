@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Structural.Bridge;
 
 // Implementor interface
 public interface IImplementor

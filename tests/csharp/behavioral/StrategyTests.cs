@@ -1,13 +1,27 @@
-using Xunit;
+using DesignPatterns.Behavioral.Strategy;
 
-public class StrategyTestsTests
+namespace DesignPatterns.Tests.Behavioral;
+public class StrategyTests
 {
     [Fact]
-    public void Test_StrategyTests()
+    public void Context_ShouldUseConcreteStrategyA()
     {
         // Arrange
-        // Act
-        // Assert
+        var context = new Context();
+        context.SetStrategy(new ConcreteStrategyA());
+
+        // Act & Assert
+        context.ExecuteStrategy();
+    }
+
+    [Fact]
+    public void Context_ShouldUseConcreteStrategyB()
+    {
+        // Arrange
+        var context = new Context();
+        context.SetStrategy(new ConcreteStrategyB());
+
+        // Act & Assert
+        context.ExecuteStrategy();
     }
 }
-

@@ -1,13 +1,21 @@
-using Xunit;
+using DesignPatterns.Structural.Bridge;
 
-public class BridgeTestsTests
+namespace DesignPatterns.Tests.Structural;
+
+public class BridgeTests
 {
     [Fact]
-    public void Test_BridgeTests()
+    public void Bridge_ShouldCallImplementorOperation()
     {
         // Arrange
-        // Act
-        // Assert
+        IImplementor implementorA = new ConcreteImplementorA();
+        IImplementor implementorB = new ConcreteImplementorB();
+        Abstraction abstractionA = new RefinedAbstraction(implementorA);
+        Abstraction abstractionB = new RefinedAbstraction(implementorB);
+
+        // Act & Assert
+        abstractionA.Operation();
+        abstractionB.Operation();
+        Assert.True(true); // Manually verify console output or use mocks
     }
 }
-

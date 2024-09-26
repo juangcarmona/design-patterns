@@ -1,13 +1,18 @@
-using Xunit;
+using DesignPatterns.Creational.Singleton;
 
-public class SingletonTestsTests
+namespace DesignPatterns.Tests.Creational;
+
+public class SingletonTests
 {
     [Fact]
-    public void Test_SingletonTests()
+    public void Singleton_ShouldReturnSameInstance()
     {
-        // Arrange
         // Act
+        var instance1 = Singleton.GetInstance();
+        var instance2 = Singleton.GetInstance();
+
         // Assert
+        Assert.Equal(instance1, instance2);
+        Assert.True(ReferenceEquals(instance1, instance2)); // Ensure it's the same instance
     }
 }
-

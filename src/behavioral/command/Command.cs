@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Behavioral.Command;
 
 // Command interface
 public interface ICommand

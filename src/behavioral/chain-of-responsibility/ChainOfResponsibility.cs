@@ -1,4 +1,4 @@
-using System;
+namespace DesignPatterns.Behavioral.ChainOfResponsibility;
 
 public abstract class Handler
 {

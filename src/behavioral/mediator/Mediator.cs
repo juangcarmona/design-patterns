@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Behavioral.Mediator;
 
 // Mediator interface
 public interface IMediator
@@ -12,6 +11,7 @@ public class ConcreteMediator : IMediator
 {
     private Component1 _component1;
     private Component2 _component2;
+    private bool _actionInProgress = false; // Variable de control
 
     public ConcreteMediator(Component1 component1, Component2 component2)
     {
@@ -23,16 +23,22 @@ public class ConcreteMediator : IMediator
 
     public void Notify(object sender, string eventCode)
     {
+        if (_actionInProgress) return; // Evitar recursión infinita
+
+        _actionInProgress = true;
+
         if (eventCode == "A")
         {
-            Console.WriteLine("Mediator reacts to A and triggers following operations:");
+            Console.WriteLine("Mediator reacts to A and triggers the following operations:");
             _component2.DoAction2();
         }
         else if (eventCode == "B")
         {
-            Console.WriteLine("Mediator reacts to B and triggers following operations:");
+            Console.WriteLine("Mediator reacts to B and triggers the following operations:");
             _component1.DoAction1();
         }
+
+        _actionInProgress = false;
     }
 }
 
@@ -72,6 +78,7 @@ public class Component2 : Component
     }
 }
 
+// Client code
 class Program
 {
     static void Main()

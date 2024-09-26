@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Creational.FactoryMethod;
 
 // Product interface
 public interface IProduct

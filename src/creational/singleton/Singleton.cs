@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Creational.Singleton;
 
 // Singleton class
 public class Singleton

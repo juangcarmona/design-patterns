@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Behavioral.TemplateMethod;
 
 // Abstract Class
 public abstract class AbstractClass

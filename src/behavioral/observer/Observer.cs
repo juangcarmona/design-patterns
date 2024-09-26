@@ -1,6 +1,4 @@
-
-using System;
-using System.Collections.Generic;
+namespace DesignPatterns.Behavioral.Observer;
 
 // Subject interface
 public interface ISubject

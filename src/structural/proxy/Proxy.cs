@@ -1,5 +1,4 @@
-
-using System;
+namespace DesignPatterns.Structural.Proxy;
 
 // Subject interface
 public interface ISubject

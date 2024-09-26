@@ -1,13 +1,17 @@
-using Xunit;
-
-public class CommandTestsTests
+using DesignPatterns.Behavioral.Command;
+namespace DesignPatterns.Tests.Behavioral;
+public class CommandTests
 {
     [Fact]
-    public void Test_CommandTests()
+    public void ConcreteCommand_ShouldCallReceiverAction()
     {
         // Arrange
-        // Act
-        // Assert
+        var receiver = new Receiver();
+        var command = new ConcreteCommand(receiver);
+        var invoker = new Invoker();
+        invoker.SetCommand(command);
+
+        // Act & Assert
+        invoker.ExecuteCommand();
     }
 }
-

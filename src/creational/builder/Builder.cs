@@ -1,5 +1,5 @@
+namespace DesignPatterns.Creational.Builder;
 
-using System;
 
 // Product class
 public class Product

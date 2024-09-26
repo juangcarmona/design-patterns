@@ -1,5 +1,5 @@
+namespace DesignPatterns.Creational.Prototype;
 
-using System;
 
 // Prototype interface
 public interface IPrototype
