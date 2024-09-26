@@ -1,1 +1,18 @@
-%% TODO: Añadir diagrama de Mermaid para el patrón flyweight
+
+```mermaid
+classDiagram
+    class Flyweight {
+        +operation()
+    }
+
+    class ConcreteFlyweight {
+        +operation()
+    }
+
+    class FlyweightFactory {
+        +getFlyweight()
+    }
+
+    FlyweightFactory o-- Flyweight
+    Flyweight <|-- ConcreteFlyweight
+```
