@@ -1,1 +1,19 @@
-%% TODO: Añadir diagrama de Mermaid para el patrón proxy
+
+```mermaid
+classDiagram
+    class Subject {
+        +request()
+    }
+
+    class RealSubject {
+        +request()
+    }
+
+    class Proxy {
+        +request()
+    }
+
+    Subject <|-- RealSubject
+    Subject <|-- Proxy
+    Proxy o-- RealSubject
+```
