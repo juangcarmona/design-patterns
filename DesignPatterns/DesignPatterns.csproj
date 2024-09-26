@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+
+<ItemGroup>
+  <None Update="..\src\**\*.*">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+</ItemGroup>
+
+
+<ItemGroup>
+  <ProjectReference Include="..\DesignPatterns.Tests\DesignPatterns.Tests.csproj" />
+</ItemGroup>
 </Project>
