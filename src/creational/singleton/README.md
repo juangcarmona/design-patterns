@@ -8,7 +8,8 @@ The **Singleton** pattern ensures that a class has only one instance and provide
 ```mermaid
 classDiagram
     class Singleton {
-        +getInstance()
+        - instance
+        + GetInstance()
     }
     Singleton o-- Singleton : unique instance
 ```
