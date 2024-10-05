@@ -19,11 +19,11 @@ Para la versión en inglés de este archivo, haz **clic [aquí](README.md)**.
 ## Lista de Patrones de Diseño
 
 ### Creacionales
-- Factory Method
+- Factory Method [Micro Guía en Youtube](https://youtube.com/shorts/yYv4MyfEpmw) 
 - Abstract Factory
 - Builder
 - Prototype
-- Singleton
+- Singleton → [Micro Guía en Youtube](https://www.youtube.com/shorts/KOGKcRv7wrg)
 
 ### Estructurales
 - Adapter

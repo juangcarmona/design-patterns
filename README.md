@@ -16,11 +16,11 @@ This series of short videos is dedicated to explaining **software design pattern
 ## Design Patterns List
 
 ### Creational
-- Factory Method
+- Factory Method [Micro Guía en Youtube (Spanish)](https://youtube.com/shorts/yYv4MyfEpmw) 
 - Abstract Factory
 - Builder
 - Prototype
-- Singleton
+- Singleton → [Micro Guía en Youtube (Spanish)](https://www.youtube.com/shorts/KOGKcRv7wrg)
 
 ### Structural
 - Adapter
