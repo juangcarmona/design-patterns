@@ -35,7 +35,6 @@ namespace DesignPatterns.Structural.Composite
             Console.WriteLine("Composite operation");
             foreach (var child in _children)
             {
-                // Aquí llamamos a la implementación de Operation en los hijos
                 child.Operation();
             }
         }
@@ -46,19 +45,14 @@ namespace DesignPatterns.Structural.Composite
     {
         static void Main()
         {
-            // Crear el composite principal (root)
             Composite root = new Composite();
-            root.Add(new Leaf());
 
-            // Crear una rama (branch) del composite
             Composite branch = new Composite();
             branch.Add(new Leaf());
             branch.Add(new Leaf());
-
-            // Añadir la rama al composite principal
+            
             root.Add(branch);
-
-            // Llamar a la operación
+            
             root.Operation();
         }
     }
