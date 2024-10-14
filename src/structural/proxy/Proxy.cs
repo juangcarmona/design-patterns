@@ -22,12 +22,14 @@ public class Proxy : ISubject
 
     public void Request()
     {
+        // Lazy initialization of RealSubject
         if (_realSubject == null)
         {
             _realSubject = new RealSubject();
         }
-        Console.WriteLine("Proxy: Logging request before forwarding to RealSubject.");
-        _realSubject.Request();
+        
+        Console.WriteLine("Proxy: Logging request before forwarding.");
+        _realSubject.Request(); // Delegating to RealSubject
     }
 }
 
@@ -36,6 +38,7 @@ class Program
 {
     static void Main()
     {
+        // In a real-world application, consider using Dependency Injection (DI) to manage RealSubject.
         ISubject proxy = new Proxy();
         proxy.Request();
     }
