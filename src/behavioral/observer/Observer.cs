@@ -11,43 +11,40 @@ public interface ISubject
 // Concrete Subject
 public class ConcreteSubject : ISubject
 {
-    private List<IObserver> _observers = new List<IObserver>();
+    private List<IObserver> _observers = new();
     private string _state;
-
-    public string GetState()
-    {
-        return _state;
-    }
 
     public void SetState(string state)
     {
         _state = state;
-        Notify();
+        Notify();  // Notifies observers when state changes
     }
 
     public void Attach(IObserver observer)
     {
-        _observers.Add(observer);
+        _observers.Add(observer);  // Adds observer to the list
     }
 
     public void Detach(IObserver observer)
     {
-        _observers.Remove(observer);
+        _observers.Remove(observer);  // Removes observer from the list
     }
 
     public void Notify()
     {
         foreach (var observer in _observers)
         {
-            observer.Update();
+            observer.Update();  // Notifies all observers
         }
     }
+
+    public string GetState() => _state;  // Returns current state
 }
 
 // Observer interface
 public interface IObserver
 {
-    void Update();
+    void Update();  // Method to update the observer
 }
 
 // Concrete Observer
@@ -58,7 +55,7 @@ public class ConcreteObserver : IObserver
     public ConcreteObserver(ConcreteSubject subject)
     {
         _subject = subject;
-        _subject.Attach(this);
+        _subject.Attach(this);  // Automatically attach to subject
     }
 
     public void Update()
@@ -67,14 +64,15 @@ public class ConcreteObserver : IObserver
     }
 }
 
+// Client code
 class Program
 {
     static void Main()
     {
-        ConcreteSubject subject = new ConcreteSubject();
+        var subject = new ConcreteSubject();
 
-        ConcreteObserver observer1 = new ConcreteObserver(subject);
-        ConcreteObserver observer2 = new ConcreteObserver(subject);
+        var observer1 = new ConcreteObserver(subject);
+        var observer2 = new ConcreteObserver(subject);
 
         subject.SetState("State1");
         subject.SetState("State2");
