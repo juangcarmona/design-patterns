@@ -7,6 +7,7 @@ The **Memento** pattern allows you to capture and externalize an object's intern
 
 ```mermaid
 classDiagram
+direction LR
     class Memento {
         +getState()
     }
