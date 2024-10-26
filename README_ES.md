@@ -19,33 +19,33 @@ Para la versión en inglés de este archivo, haz **clic [aquí](README.md)**.
 ## Lista de Patrones de Diseño
 
 ### Creacionales
-- Factory Method [Micro Guía en Youtube](https://youtube.com/shorts/yYv4MyfEpmw) 
-- Abstract Factory
-- Builder
-- Prototype
-- Singleton → [Micro Guía en Youtube](https://www.youtube.com/shorts/KOGKcRv7wrg)
+- Factory Method [Ver en YouTube](https://youtube.com/shorts/yYv4MyfEpmw) 
+- Abstract Factory → [Ver en YouTube](https://youtube.com/shorts/yPNbS6iC9Ek)
+- Builder → [Ver en YouTube](https://youtube.com/shorts/NkM6TdoOgxU)
+- Prototype → [Ver en YouTube](https://youtube.com/shorts/HKxFtCl5QSs)
+- Singleton → [Ver en YouTube](https://www.youtube.com/shorts/KOGKcRv7wrg)
 
 ### Estructurales
-- Adapter
-- Bridge
-- Composite
-- Decorator
-- Facade
-- Flyweight
-- Proxy
+- Adapter → [Ver en YouTube](https://youtube.com/shorts/zK806Od1Tx4)
+- Bridge → [Ver en YouTube](https://youtube.com/shorts/kYJvDPCPOHQ)
+- Composite → [Ver en YouTube](https://youtube.com/shorts/6Ah5392cOA8)
+- Decorator → [Ver en YouTube](https://youtube.com/shorts/gtQUcHTr4O8)
+- Facade → [Ver en YouTube](https://youtube.com/shorts/o3WLmeWdxz4)
+- Flyweight → [Ver en YouTube](https://youtube.com/shorts/q26VRLIGqGk)
+- Proxy → [Ver en YouTube](https://youtube.com/shorts/2ERyFY1Oof4)
 
 ### Comportamentales
-- Chain of Responsibility
-- Command
-- Interpreter
-- Iterator
-- Mediator
-- Memento
-- Observer
-- State
-- Strategy
-- Template Method
-- Visitor
+- Chain of Responsibility → [Ver en YouTube](https://youtube.com/shorts/_Qei2SJ6zHA)
+- Command → [Ver en YouTube](https://youtube.com/shorts/vcxsWBXWLk4)
+- Interpreter → [Ver en YouTube](https://youtube.com/shorts/IpZ_tk3WHEw)
+- Iterator → [Ver en YouTube](https://youtube.com/shorts/9mJzJ_FFFFs)
+- Mediator → [Ver en YouTube](https://youtube.com/shorts/YUklZQffTHQ)
+- Memento → [Ver en YouTube](https://youtube.com/shorts/zuqltcjaN8I)
+- Observer → [Ver en YouTube](https://youtube.com/shorts/V7CEn4uJQGA)
+- State → [Ver en YouTube](https://youtube.com/shorts/xtVE-LIRMCY)
+- Strategy → [Ver en YouTube](https://youtube.com/shorts/8lOy-oZX8vs)
+- Template Method → [Ver en YouTube](https://youtube.com/shorts/Pi_JLdMP3AQ)
+- Visitor → [Ver en YouTube](https://youtube.com/shorts/sKi7dvMW62s)
 
 ## ¿Qué encontrarás aquí?
 

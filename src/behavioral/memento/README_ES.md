@@ -7,6 +7,7 @@ El patrón **Memento** permite capturar y externalizar el estado interno de un o
 
 ```mermaid
 classDiagram
+direction LR
     class Memento {
         +getState()
     }
