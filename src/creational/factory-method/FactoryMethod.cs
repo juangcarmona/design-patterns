@@ -1,47 +1,75 @@
-namespace DesignPatterns.Creational.FactoryMethod;
-
-// Product interface
-public interface IProduct
+namespace DesignPatterns.Creational.FactoryMethod
 {
-    void Use();
-}
-
-// Concrete Product
-public class ConcreteProduct : IProduct
-{
-    public void Use()
+    // Product interface
+    public interface IIceCream
     {
-        Console.WriteLine("Using ConcreteProduct.");
+        void Serve();
     }
-}
 
-// Creator abstract class
-public abstract class Creator
-{
-    public abstract IProduct FactoryMethod();
-
-    public void SomeOperation()
+    // Concrete Product: Cone
+    public class ConeIceCream : IIceCream
     {
-        var product = FactoryMethod();
-        product.Use();
+        public void Serve()
+        {
+            Console.WriteLine("Serving ice cream in a cone.");
+        }
     }
-}
 
-// Concrete Creator
-public class ConcreteCreator : Creator
-{
-    public override IProduct FactoryMethod()
+    // Concrete Product: Cup
+    public class CupIceCream : IIceCream
     {
-        return new ConcreteProduct();
+        public void Serve()
+        {
+            Console.WriteLine("Serving ice cream in a cup.");
+        }
     }
-}
 
-// Client code
-class Program
-{
-    static void Main()
+    // Creator abstract class
+    public abstract class IceCreamCreator
     {
-        Creator creator = new ConcreteCreator();
-        creator.SomeOperation();
+        public abstract IIceCream FactoryMethod();
+
+        public void ServeIceCream()
+        {
+            var iceCream = FactoryMethod();
+            iceCream.Serve();
+        }
+    }
+
+    // Concrete Creator: Cone
+    public class ConeIceCreamCreator : IceCreamCreator
+    {
+        public override IIceCream FactoryMethod()
+        {
+            return new ConeIceCream();
+        }
+    }
+
+    // Concrete Creator: Cup
+    public class CupIceCreamCreator : IceCreamCreator
+    {
+        public override IIceCream FactoryMethod()
+        {
+            return new CupIceCream();
+        }
+    }
+
+    // Client code
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Choose your ice cream type (cone/cup):");
+            string? input = Console.ReadLine()?.ToLower();
+
+            IceCreamCreator creator = input switch
+            {
+                "cone" => new ConeIceCreamCreator(),
+                "cup" => new CupIceCreamCreator(),
+                _ => throw new ArgumentException("Invalid type")
+            };
+
+            creator.ServeIceCream();
+        }
     }
 }

@@ -2,22 +2,35 @@
 ```mermaid
 classDiagram
     class Creator {
-        +factoryMethod()
+        +factoryMethod() Product
+        +someOperation() void
     }
 
-    class ConcreteCreator {
-        +factoryMethod()
+    class ConcreteCreatorA {
+        +factoryMethod() ConcreteProductA
+    }
+
+    class ConcreteCreatorB {
+        +factoryMethod() ConcreteProductB
     }
 
     class Product {
-        +use()
+        <<Interface>>
+        +use() void
     }
 
-    class ConcreteProduct {
-        +use()
+    class ConcreteProductA {
+        +use() void
     }
 
-    Creator o--> Product
-    Creator <|-- ConcreteCreator
-    Product <|-- ConcreteProduct
+    class ConcreteProductB {
+        +use() void
+    }
+
+    Creator o--> Product : "Factory returns"
+    Creator <|-- ConcreteCreatorA
+    Creator <|-- ConcreteCreatorB
+    Product <|-- ConcreteProductA
+    Product <|-- ConcreteProductB
+
 ```
